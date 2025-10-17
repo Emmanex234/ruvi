@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ruvi — Static Tailwind Replica</title>
+  <meta name="description" content="Ruvi - Static Tailwind replica: AI SuperApp, tokenomics, roadmap, ecosystem, and FAQs." />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CDN (for convenience). If you want fully offline, I can compile and embed the CSS. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Basic visual tuning to match original look */
+    :root{
+      --primary: #0693e3;
+      --accent: #ff6f61;
+      --dark: #0f1724;
+    }
+    body { font-family: 'Roboto', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background: #ffffff; color: #0b1220; }
+    .heading-font { font-family: 'Roboto Slab', serif; }
+    .glass { background: rgba(255,255,255,0.6); backdrop-filter: blur(6px); }
+    /* small helper for hero circle image */
+    .circle-img { border-radius: 9999px; width: 75px; height: 75px; object-fit: cover; }
+    /* tokenomics card */
+    .token-card { background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(250,250,250,0.9)); border: 1px solid rgba(15,23,36,0.04); }
+    /* roadmap dot */
+    .dot { width: 14px; height: 14px; border-radius: 9999px; background: var(--primary); display:inline-block; }
+    /* footer */
+    footer a { color: #b6c9d9; }
+  </style>
+</head>
+<body class="antialiased leading-relaxed">
+
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-40 bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <div class="flex items-center gap-4">
+        <a href="#" class="flex items-center gap-3">
+          <img src="https://ruvi.io/wp-content/uploads/2025/03/Ruvi-AI-v3-extended-light-3.svg" alt="Ruvi" class="h-12 w-auto">
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700">
+          <a href="#about" class="hover:text-primary">About</a>
+          <a href="#features" class="hover:text-primary">Features</a>
+          <a href="#tokenomics" class="hover:text-primary">Tokenomics</a>
+          <a href="#ecosystem" class="hover:text-primary">Ecosystem</a>
+          <a href="#roadmap" class="hover:text-primary">Roadmap</a>
+          <a href="#faqs" class="hover:text-primary">FAQs</a>
+          <a href="https://docs.ruvi.io/" target="_blank" rel="noopener">WhitePaper</a>
+        </nav>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="https://web.ruvi.io/register" class="inline-flex items-center gap-2 px-4 py-2 border rounded-full text-sm font-bold heading-font" style="background:#ffffff; border:1px solid rgba(6,147,227,0.12);">
+          Try RUVI AI
+        </a>
+        <a href="https://presale.ruvi.io/" class="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-full text-sm font-bold shadow">Join Presale</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-white to-slate-50">
+    <div class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <div class="w-full flex justify-center mb-4">
+          <span class="px-3 py-1 rounded-full bg-green-100 text-green-800 font-semibold text-sm">Presale is Live! 🚀</span>
+        </div>
+        <h1 class="heading-font text-4xl md:text-6xl font-extrabold text-slate-900 leading-tight text-center max-w-2xl mx-auto">
+          The <span class="inline-flex items-center justify-center px-2">
+            <img src="https://ruvi.io/wp-content/uploads/2025/03/ai-icon-75x75.png" alt="" class="circle-img mr-3" style="width:clamp(36px,6vw,75px); height:clamp(36px,6vw,75px);">
+          </span> SuperApp<br/>Powered by <span class="text-blue-600 italic">Web3
+        </h1>
+        <p class="mt-6 text-lg text-slate-700 max-w-2xl">Ruvi is an <strong>all-in-one AI</strong> platform for text, image, audio, and video generation—combined with tokenized rewards & user-powered model training. Backed by the <strong>$RUVI Token</strong> and already in <strong>public beta</strong>.</p>
+        <div class="mt-8 flex flex-col items-center gap-4 justify-center md:flex-row md:items-center md:justify-start">
+          <a href="https://web.ruvi.io/register" class="px-6 py-3 rounded-full border font-bold inline-flex items-center gap-2">Try RUVI AI <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg></a>
+          <a href="https://presale.ruvi.io/" class="px-6 py-3 rounded-full bg-blue-600 text-white font-bold">Join Presale</a>
+        </div>
+        
+      </div>
+
+    <h4 class="heading-font text-3xl md:text-4xl font-bold text-center">
+      Ruvi AI <span class="italic" style="text-decoration: underline; text-decoration-color: var(--accent);">Public Beta</span> Now Available!
+    </h4>
+    <div class="md:col-span-2 flex justify-center">
+      <p class="mt-4 text-sm text-slate-500 text-center">Android & iOS Mobile Version Coming Soon.</p>
+    </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-7xl mx-auto px-6 py-16">
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="heading-font text-3xl md:text-4xl font-bold">About Ruvi</h2>
+        <p class="mt-4 text-slate-700">Ruvi is a next-gen AI superapp powered by Web3, combining text, image, audio, and video generation with a reward-driven token economy. Join the $RUVI presale and earn by helping train our native AI model.</p>
+        <ul class="mt-6 space-y-3 text-slate-700">
+          <li>• Unified AI tools for creators and enterprises.</li>
+          <li>• Tokenized incentives and community training.</li>
+          <li>• Built for privacy and decentralization.</li>
+        </ul>
+      </div>
+      <div class="space-y-4">
+        <img src="https://ruvi.io/wp-content/uploads/2025/03/Ruvi-AI-meta-image.png" alt="Ruvi" class="rounded-xl shadow-lg w-full">
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="bg-slate-50 py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="heading-font text-3xl md:text-4xl font-bold text-center">Features</h2>
+      <p class="text-center mt-2 text-slate-600">Text, images, audio, video — and tokenized rewards for contributors.</p>
+      <div class="mt-8 grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="p-6 bg-white rounded-2xl shadow-sm">
+          <h3 class="font-bold">Text Generation</h3>
+          <p class="mt-2 text-slate-600 text-sm">Create stories, summaries, and copy using advanced models.</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl shadow-sm">
+          <h3 class="font-bold">Image Generation</h3>
+          <p class="mt-2 text-slate-600 text-sm">Produce high-quality images from prompts.</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl shadow-sm">
+          <h3 class="font-bold">Audio & Voice</h3>
+          <p class="mt-2 text-slate-600 text-sm">Text-to-speech, voice cloning and audio editing tools.</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl shadow-sm">
+          <h3 class="font-bold">Video Tools</h3>
+          <p class="mt-2 text-slate-600 text-sm">Short-form generative video features for creators.</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl shadow-sm">
+          <h3 class="font-bold">Community Training</h3>
+          <p class="mt-2 text-slate-600 text-sm">Users earn $RUVI tokens for safe, validated data contributions.</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl shadow-sm">
+          <h3 class="font-bold">Privacy & Security</h3>
+          <p class="mt-2 text-slate-600 text-sm">Decentralized model training and data controls.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tokenomics -->
+  <section id="tokenomics" class="max-w-7xl mx-auto px-6 py-16">
+    <h2 class="heading-font text-3xl md:text-4xl font-bold text-center">Tokenomics</h2>
+    <p class="text-center mt-2 text-slate-600">The $RUVI token powers the reward economy and access to premium features.</p>
+
+    <div class="mt-10 grid md:grid-cols-3 gap-6">
+      <div class="p-6 rounded-2xl shadow-sm token-card">
+        <h4 class="font-bold">Total Supply</h4>
+        <p class="mt-2 text-slate-700 text-2xl font-extrabold">1,000,000,000 $RUVI</p>
+        <p class="mt-3 text-sm text-slate-600">Allocation split across community, team, reserves, and partners.</p>
+      </div>
+      <div class="p-6 rounded-2xl shadow-sm token-card">
+        <h4 class="font-bold">Presale</h4>
+        <p class="mt-2 text-slate-700 text-2xl font-extrabold">Public Presale Live</p>
+        <p class="mt-3 text-sm text-slate-600">Join early to access discounts and bonuses.</p>
+      </div>
+      <div class="p-6 rounded-2xl shadow-sm token-card">
+        <h4 class="font-bold">Staking & Rewards</h4>
+        <p class="mt-2 text-slate-700 text-2xl font-extrabold">Earn by contributing</p>
+        <p class="mt-3 text-sm text-slate-600">Stake tokens to access features and earn yield.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ecosystem -->
+  <section id="ecosystem" class="bg-slate-50 py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="heading-font text-3xl md:text-4xl font-bold text-center">Ecosystem</h2>
+      <p class="text-center mt-2 text-slate-600 max-w-2xl mx-auto">A broad set of tools, SDKs, and partner integrations designed to grow a community-owned AI stack.</p>
+
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="p-6 bg-white rounded-2xl shadow-sm">
+          <h4 class="font-bold">Developer SDKs</h4>
+          <p class="mt-2 text-slate-600 text-sm">Build integrations with easy-to-use SDKs.</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl shadow-sm">
+          <h4 class="font-bold">Marketplace</h4>
+          <p class="mt-2 text-slate-600 text-sm">Buy/sell prompts, models, and datasets.</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl shadow-sm">
+          <h4 class="font-bold">Community Hub</h4>
+          <p class="mt-2 text-slate-600 text-sm">Governance, proposals and rewards dashboard.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roadmap -->
+  <section id="roadmap" class="max-w-7xl mx-auto px-6 py-16">
+    <h2 class="heading-font text-3xl md:text-4xl font-bold text-center">Roadmap</h2>
+    <p class="text-center mt-2 text-slate-600">Milestones from alpha to fully decentralized AI platform.</p>
+
+    <div class="mt-10 space-y-8">
+      <div class="flex items-start gap-6">
+        <div class="mt-1"><span class="dot"></span></div>
+        <div>
+          <h4 class="font-bold">Q1 2024 — Alpha</h4>
+          <p class="text-slate-600">Private alpha testing and initial model training.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-6">
+        <div class="mt-1"><span class="dot"></span></div>
+        <div>
+          <h4 class="font-bold">Q3 2024 — Public Beta</h4>
+          <p class="text-slate-600">Open public beta with early contributors and presale.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-6">
+        <div class="mt-1"><span class="dot"></span></div>
+        <div>
+          <h4 class="font-bold">2025 — Decentralized Governance</h4>
+          <p class="text-slate-600">DAO formation and on-chain governance rollout.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs -->
+  <section id="faqs" class="bg-slate-50 py-16">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="heading-font text-3xl md:text-4xl font-bold text-center">Frequently Asked Questions</h2>
+      <div class="mt-8 space-y-4">
+        <details class="p-4 bg-white rounded-lg shadow-sm">
+          <summary class="font-bold cursor-pointer">What is Ruvi?</summary>
+          <div class="mt-2 text-slate-600">Ruvi is an AI superapp offering generative tools for text, images, audio, and video — built with token incentives and community training.</div>
+        </details>
+        <details class="p-4 bg-white rounded-lg shadow-sm">
+          <summary class="font-bold cursor-pointer">How do I join the presale?</summary>
+          <div class="mt-2 text-slate-600">Visit the presale portal at <a href="https://presale.ruvi.io/" class="text-blue-600">presale.ruvi.io</a>.</div>
+        </details>
+        <details class="p-4 bg-white rounded-lg shadow-sm">
+          <summary class="font-bold cursor-pointer">How do I earn $RUVI?</summary>
+          <div class="mt-2 text-slate-600">Contribute curated data, participate in training, or stake tokens to earn rewards.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark-800 mt-12 border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-6 py-12 text-slate-500">
+      <div class="md:flex md:justify-between md:items-start gap-8">
+        <div class="mb-6 md:mb-0">
+          <img src="https://ruvi.io/wp-content/uploads/2025/03/Ruvi-AI-v3-extended-light-3.svg" alt="Ruvi" class="h-10">
+          <p class="mt-3 text-sm text-slate-500 max-w-md">Ruvi — AI SuperApp. All rights reserved.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-6 md:grid-cols-4">
+          <div>
+            <h5 class="font-bold text-slate-700 mb-2">Product</h5>
+            <ul class="space-y-1 text-sm">
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Docs</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="font-bold text-slate-700 mb-2">Company</h5>
+            <ul class="space-y-1 text-sm">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="font-bold text-slate-700 mb-2">Resources</h5>
+            <ul class="space-y-1 text-sm">
+              <li><a href="https://docs.ruvi.io/">Whitepaper</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="font-bold text-slate-700 mb-2">Contact</h5>
+            <ul class="space-y-1 text-sm">
+              <li><a href="mailto:hello@ruvi.io">hello@ruvi.io</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 text-sm text-slate-400">© Ruvi — All rights reserved.</div>
+    </div>
+  </footer>
+</body>
+</html>
